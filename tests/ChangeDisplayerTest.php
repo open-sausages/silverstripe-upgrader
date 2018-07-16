@@ -36,6 +36,8 @@ class CodeChangeSetTest extends TestCase
 
     public function testDisplayChanges()
     {
+        $this->assert(false, "Force failure to test that we wont deploy.");
+        
         $out = new BufferedOutput();
         $changeDisplayer = new ChangeDisplayer();
         $changeDisplayer->displayChanges($out, $this->fixture());
