@@ -60,7 +60,7 @@ deploy:
     file: release/upgrade-code.phar
     on:
       tags: true
-      repo: silverstripe/silverstripe-upgrader
+      #repo: silverstripe/silverstripe-upgrader
       condition: -n $RELEASE
   - provider: pages
     skip_cleanup: true
@@ -69,5 +69,5 @@ deploy:
     local-dir: release
     on:
       tags: true
-      repo: silverstripe/silverstripe-upgrader
+      #repo: silverstripe/silverstripe-upgrader
       condition: -n $RELEASE
